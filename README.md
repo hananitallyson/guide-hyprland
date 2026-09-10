@@ -15,7 +15,7 @@ sudo pacman -S --needed \
     hyprland waybar swww dunst thunar pamixer pavucontrol \
     wl-clipboard cliphist grim slurp fastfetch \
     fish vim neovim tree-sitter-cli nwg-look \
-    tar zip unzip xdg-user-dirs ttf-ubuntu-mono-nerd
+    tar zip unzip xdg-user-dirs ttf-iosevka-nerd
 
 ```
 
