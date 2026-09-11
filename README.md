@@ -52,7 +52,9 @@ rm -rf ~/.config/fastfetch \
        ~/.config/nvim \
        ~/.config/tofi \
        ~/.config/waybar
+```
 
+```bash
 # Create dotfile symlinks
 ln -s ~/i64dotfiles/fastfetch          ~/.config/fastfetch
 ln -s ~/i64dotfiles/fish               ~/.config/fish
@@ -69,25 +71,30 @@ ln -s ~/i64dotfiles/waybar             ~/.config/waybar
 # Set Git name & email
 git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
+
 ```
 
 ```bash
 # Generate SSH key
 ssh-keygen -t ed25519 -C "your_email@example.com"
+
 ```
 
 ```bash
 # Start SSH agent
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+
 ```
 
 ```bash
 # Show public key
 cat ~/.ssh/id_ed25519.pub
+
 ```
 
 ```bash
 # Test GitHub connection
 ssh -T git@github.com
+
 ```
