@@ -13,7 +13,7 @@ makepkg -si
 # Install system packages
 sudo pacman -S --needed \
     hyprland waybar swww dunst thunar pamixer pavucontrol \
-    wl-clipboard cliphist grim slurp fastfetch \
+    wl-clipboard wl-screenrec cliphist grim slurp fastfetch \
     fish vim neovim tree-sitter-cli nwg-look \
     tar zip unzip xdg-user-dirs ttf-iosevka-nerd
 
@@ -63,4 +63,31 @@ ln -s ~/i64dotfiles/nvim               ~/.config/nvim
 ln -s ~/i64dotfiles/tofi               ~/.config/tofi
 ln -s ~/i64dotfiles/waybar             ~/.config/waybar
 
+```
+
+```bash
+# Set Git name & email
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+```
+
+```bash
+# Generate SSH key
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+```bash
+# Start SSH agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+```bash
+# Show public key
+cat ~/.ssh/id_ed25519.pub
+```
+
+```bash
+# Test GitHub connection
+ssh -T git@github.com
 ```
